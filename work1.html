@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>웹 폼 사례</h1>
+
+	<form action="lunch.jsp" method="get">
+		<table cellspacing="5" border="1">
+			<tr>
+				<td>사용자 이름</td>
+				<td><input type="text" name="Name"></td>
+			</tr>
+
+			<tr>
+				<td>이메일</td>
+				<td><input type="text" name="Email"></td>
+			</tr>
+
+			<tr>
+				<td>검색단어</td>
+				<td><input type="text" name="search"></td>
+			</tr>
+
+			<tr>
+				<td>취미</td>
+				<td><input type="checkbox" name="hobby" value="sports">운동
+					<input type="checkbox" name="hobby" value="music">음악 <input
+					type="checkbox" name="hobby" value="travel">여행</td>
+			</tr>
+
+			<tr>
+				<td>성별</td>
+				<td><input type="radio" name="gender" value="male">남자 <input
+					type="radio" name="gender" value="female">여자</td>
+			</tr>
+			<tr>
+				<td>점심메뉴</td>
+				<td><select name="lunch">
+						<option value="opt1">짜장면</option>
+						<option value="opt2">짬뽕</option>
+				</select></td>
+			</tr>
+		</table>
+
+		<input type="submit" value="전송">
+
+	</form>
+</body>
+</html>
+
+<!-- 사용자가 입력한 값을 action 주소로 url에 표시된다. (?firstName) -->
+<!-- post 방식 : get 방식과 다르게 (주소창에 ? 통해 노출) 주소창에는 보이지 않는다. request body에 숨겨서 전송. -->
